@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "paper": "QX26AgenticDelegation",
+  "audit_kind": "independent_source_atom_to_spec_correspondence_review",
+  "validator": "Codex QX26 atom correspondence reviewer",
+  "validated_at": "2026-09-01T02:36:43Z",
+  "items": {
+    "generation_menus_and_activity": {
+      "spec_declaration": "QX26AgenticDelegation.generation_menus_and_activitySpec",
+      "source_atom_bindings": [
+        {
+          "source_atom_id": "generation.menus.and.activity",
+          "semantic_bridge": "For arbitrary real solo, copilot, and delegation surpluses, generationOneValue is max(S,C), generationTwoValue is max(max(S,C),D), activityIndicator is the indicator of nonnegative best surplus, and activeLanguageCount is the finite sum of those indicators. These are exactly the four source definitions in the atom."
+        }
+      ],
+      "closure_terminal_disposition": {
+        "source_atom_id": "generation.menus.and.activity",
+        "semantic_basis": {
+          "artifact_path": "audit/source_archive_surface.tex",
+          "artifact_sha256": "99ee555dad291679321b8d3f348787e54861903c99e01595ab8cb42fd3d42031",
+          "source_locator": "audit/source_archive_surface.tex:245-249",
+          "semantic_statement": "The source defines both generation menus by maximization, activity by nonnegative surplus, and the monthly count by summing activity indicators."
+        }
+      }
+    },
+    "frontier_expansion": {
+      "spec_declaration": "QX26AgenticDelegation.frontier_expansionSpec",
+      "source_atom_bindings": [
+        {
+          "source_atom_id": "frontier.expansion",
+          "semantic_bridge": "The expanded Spec compares the source-defined old and enlarged menus pointwise, proves the new activity indicator is weakly larger for every member of the finite language set, and sums the same inequalities to obtain the pathwise count conclusion."
+        }
+      ],
+      "closure_terminal_disposition": {
+        "source_atom_id": "frontier.expansion",
+        "semantic_basis": {
+          "artifact_path": "audit/source_archive_surface.tex",
+          "artifact_sha256": "99ee555dad291679321b8d3f348787e54861903c99e01595ab8cb42fd3d42031",
+          "source_locator": "audit/source_archive_surface.tex:315-319",
+          "semantic_statement": "Adding delegation to the production menu weakly raises each pathwise activity indicator and therefore the finite active-language count."
+        }
+      }
+    },
+    "activation_band_unfamiliar_languages": {
+      "spec_declaration": "QX26AgenticDelegation.activation_band_unfamiliar_languagesSpec",
+      "source_atom_bindings": [
+        {
+          "source_atom_id": "activation.band.unfamiliar.languages",
+          "semantic_bridge": "The Spec's integer indicator difference is the source half-open activation band [T_D,T_S); an atomless probability measure on the real line realizes the source continuous-CDF condition and makes the band probability equal F(T_S)-F(T_D); summing the same interval masses realizes the source expected-count formula and nonnegativity."
+        }
+      ],
+      "closure_terminal_disposition": {
+        "source_atom_id": "activation.band.unfamiliar.languages",
+        "semantic_basis": {
+          "artifact_path": "audit/source_archive_surface.tex",
+          "artifact_sha256": "99ee555dad291679321b8d3f348787e54861903c99e01595ab8cb42fd3d42031",
+          "source_locator": "audit/source_archive_surface.tex:325-351",
+          "semantic_statement": "Under foothold and a strict threshold reduction, the source identifies the activation indicator with a half-open band, its probability with a CDF difference, and the summed expected expansion as nonnegative."
+        }
+      }
+    },
+    "specialist_and_ability_heterogeneity": {
+      "spec_declaration": "QX26AgenticDelegation.specialist_and_ability_heterogeneitySpec",
+      "source_atom_bindings": [
+        {
+          "source_atom_id": "specialist.and.ability.heterogeneity",
+          "semantic_bridge": "The common per-language activation increment supplied by the source assumption makes the finite sum equal the candidate cardinality times that increment. Its source nonnegativity and monotonicity yield weak increase under candidate-set enlargement and weak increase with general ability, exactly the proposition's two heterogeneity directions."
+        }
+      ],
+      "closure_terminal_disposition": {
+        "source_atom_id": "specialist.and.ability.heterogeneity",
+        "semantic_basis": {
+          "artifact_path": "audit/source_archive_surface.tex",
+          "artifact_sha256": "99ee555dad291679321b8d3f348787e54861903c99e01595ab8cb42fd3d42031",
+          "source_locator": "audit/source_archive_surface.tex:621-634",
+          "semantic_statement": "Comparable unfamiliar candidates give expected expansion equal to candidate count times the common increment, weakly increasing in candidate count and ability."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
++ lake build QX26AgenticDelegation.PaperInterface
+Build completed successfully (3299 jobs).
++ git diff --check -- papers/QX26AgenticDelegation papers/QX26AgenticDelegation.lean lakefile.toml ':(exclude)papers/QX26AgenticDelegation/source/'
+exit_code=0

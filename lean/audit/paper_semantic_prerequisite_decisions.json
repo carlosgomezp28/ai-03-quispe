@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "paper": "QX26AgenticDelegation",
+  "items": {
+    "QX26AgenticDelegation.soloSurplus": {
+      "source_item": "production_mode_surpluses",
+      "judgment": "matches",
+      "reason": "The Lean definition is exactly Equation (1): opportunity plus skill times mean, less the CARA variance penalty and activation cost."
+    },
+    "QX26AgenticDelegation.copilotSurplus": {
+      "source_item": "production_mode_surpluses",
+      "judgment": "matches",
+      "reason": "The Lean definition adds gamma times skill minus the conversational interaction cost to solo surplus, exactly Equation (2)."
+    },
+    "QX26AgenticDelegation.delegationSurplus": {
+      "source_item": "production_mode_surpluses",
+      "judgment": "matches",
+      "reason": "The Lean definition has every term, coefficient, sign, and variance component in the source's delegation surplus Equation (3)."
+    },
+    "QX26AgenticDelegation.generationOneValue": {
+      "source_item": "generation_menus_and_activity",
+      "judgment": "matches",
+      "reason": "The Lean definition is the maximum of solo and conversational surplus, exactly the pre-agent menu value."
+    },
+    "QX26AgenticDelegation.generationTwoValue": {
+      "source_item": "generation_menus_and_activity",
+      "judgment": "matches",
+      "reason": "The Lean definition adds delegation to the old menu and takes the maximum of all three source mode values."
+    },
+    "QX26AgenticDelegation.activityIndicator": {
+      "source_item": "generation_menus_and_activity",
+      "judgment": "matches",
+      "reason": "The natural-valued if-then-else is exactly the source indicator of weakly nonnegative best surplus."
+    },
+    "QX26AgenticDelegation.activeLanguageCount": {
+      "source_item": "generation_menus_and_activity",
+      "judgment": "matches",
+      "reason": "The Lean definition sums the activity indicators over an arbitrary finite language set, exactly the source monthly count."
+    },
+    "QX26AgenticDelegation.soloThreshold": {
+      "source_item": "activation_thresholds",
+      "judgment": "matches",
+      "reason": "The Lean body is the source solo opportunity threshold with the same activation, productivity, risk, and precision terms."
+    },
+    "QX26AgenticDelegation.copilotThreshold": {
+      "source_item": "activation_thresholds",
+      "judgment": "matches",
+      "reason": "The Lean body subtracts the net conversational gain from the solo threshold, exactly the source conversational threshold."
+    },
+    "QX26AgenticDelegation.delegationThreshold": {
+      "source_item": "activation_thresholds",
+      "judgment": "matches",
+      "reason": "The Lean body reproduces the source delegation threshold term by term, including residual error variance and verification cost."
+    },
+    "QX26AgenticDelegation.generationOneThreshold": {
+      "source_item": "activation_thresholds",
+      "judgment": "matches",
+      "reason": "The source identity min(TS,TC) = TS - max(0,gamma s-rC) is exactly the Lean definition."
+    },
+    "QX26AgenticDelegation.generationTwoThreshold": {
+      "source_item": "activation_thresholds",
+      "judgment": "matches",
+      "reason": "The Lean definition is min(T1,TD), exactly the post-agent threshold in the source."
+    },
+    "QX26AgenticDelegation.totalSignalPrecision": {
+      "source_item": "learning_after_agentic_interaction",
+      "judgment": "matches",
+      "reason": "The Lean finite sum of reciprocal signal variances is exactly the source total signal precision q."
+    },
+    "QX26AgenticDelegation.precisionWeightedSignalMean": {
+      "source_item": "learning_after_agentic_interaction",
+      "judgment": "matches",
+      "reason": "The Lean numerator and division by total precision are exactly the source precision-weighted signal mean."
+    },
+    "QX26AgenticDelegation.posteriorPrecision": {
+      "source_item": "learning_after_agentic_interaction",
+      "judgment": "matches",
+      "reason": "The Lean definition is prior precision plus total signal precision, exactly the first Bayesian update formula."
+    },
+    "QX26AgenticDelegation.posteriorMean": {
+      "source_item": "learning_after_agentic_interaction",
+      "judgment": "matches",
+      "reason": "The Lean precision-weighted combination of prior and signal means is exactly the second Bayesian update formula."
+    }
+  }
+}
