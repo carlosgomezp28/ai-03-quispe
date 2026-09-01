@@ -738,6 +738,24 @@ Languages inside this interval are outside the developer's pre-agent production 
 - `README.md` — model summary, propositions, and referee checks
 - `prompts.md` — raw LLM prompts and responses
 - `hand/` — handwritten derivation of the core model
-- `presentation.tex` — five-minute Beamer presentation source
+- `presentation.tex` — twenty-minute Beamer presentation source
 - `presentation.pdf` — compiled presentation
+- `lean/` — EconCSLib formalization, proofs, audits, and validation report
+- `lean-check.txt` — recorded EconCSLib fast-check result
 - `paper/` — paper reference and local study material
+
+## Formal verification with EconCSLib
+
+The model was also formalized using the EconCSLib paper-formalization workflow. The complete generated contribution is preserved in [`lean/`](lean/), and the final status is **partially formalized**.
+
+Main verification results:
+
+- **Proposition 1:** the weak frontier-expansion result is proved path by path from menu inclusion.
+- **Proposition 2:** the activation-band identity is formally verified once the delegated threshold is strictly below the solo threshold.
+- **Proposition 3:** the printed strict dynamic claim requires additional boundary conditions. Strict growth and strict concavity require a nonempty unfamiliar-language frontier and relevant hazards satisfying \(0 < p^2_{ik} < 1\). In particular, the allowed endpoint \(p^2_{ik}=1\) provides a counterexample to strict growth.
+- **Proposition 5:** weak repository expansion is valid, but strict expansion additionally requires positive opportunity mass in at least one interval where delegation lowers the entry threshold.
+
+The final EconCSLib fast check completed successfully with exit code `0`, and the generated Lean files contain no `sorry` or `admit`. This verifies the encoded formal statements, but does not by itself establish semantic equivalence between every Lean declaration and every claim in the paper. Human semantic review remains **0/9**.
+
+See [`lean/FINAL_VALIDATION_REPORT.md`](lean/FINAL_VALIDATION_REPORT.md) for the formalization audit and [`lean-check.txt`](lean-check.txt) for the recorded validation check.
+
