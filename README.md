@@ -1,5 +1,36 @@
 # Repository 3 — Quispe & Xu (2026)
 
+<p align="center">
+  <img src="assets/cover.png"
+       alt="Agentic Delegation and the Language Frontier"
+       width="100%">
+</p>
+
+<p align="center">
+  <strong>Agentic delegation · language frontier · activation band · formal verification</strong>
+</p>
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2605.25438">
+    <img src="https://img.shields.io/badge/PAPER-arXiv%202605.25438-B31B1B?style=flat-square">
+  </a>
+  <a href="presentation.pdf">
+    <img src="https://img.shields.io/badge/PRESENTATION-PDF-1F4E79?style=flat-square">
+  </a>
+  <a href="hand/prop-2-delegation-activation-band.pdf">
+    <img src="https://img.shields.io/badge/HAND-DERIVATION-2A7F62?style=flat-square">
+  </a>
+  <a href="lean/README.md">
+    <img src="https://img.shields.io/badge/LEAN-FORMALIZATION-6F42C1?style=flat-square">
+  </a>
+  <a href="lean/FINAL_VALIDATION_REPORT.md">
+    <img src="https://img.shields.io/badge/VALIDATION-REPORT-D97706?style=flat-square">
+  </a>
+  <a href="prompts.md">
+    <img src="https://img.shields.io/badge/CODEX-RAW%20TRANSCRIPT-555555?style=flat-square">
+  </a>
+</p>
+
 **Citation:** Alexander Quispe and Kevin Xu (2026), *“Agentic Delegation and the Language Frontier of Software Developers: A Model and Evidence from Claude Code on GitHub.”*
 
 This repository uses the substantially revised July 2026 arXiv v2 paper.
