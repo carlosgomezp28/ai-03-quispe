@@ -1,0 +1,266 @@
+{
+  "schema": 1,
+  "paper": "QX26AgenticDelegation",
+  "acceptance_credential": false,
+  "future_paper_intake_only": true,
+  "state": "sealed",
+  "inventory_scope": "complete named theoretical source surface",
+  "inventory_complete": true,
+  "source_item_identity": "source-location+normalized-statement-sha256-v1",
+  "source_artifact_path": "audit/source_archive_surface.tex",
+  "source_artifact_sha256": "99ee555dad291679321b8d3f348787e54861903c99e01595ab8cb42fd3d42031",
+  "source_version": "arXiv:2605.25438v2 (2026-07-07)",
+  "source_text_artifact": null,
+  "items": [
+    {
+      "source_item": "Environment and production-mode surplus definitions",
+      "source_location": "audit/source_archive_surface.tex:179-222",
+      "source_statement_sha256": "43fdf10e36e33b9777a8a431bf705d679f74bd2ba37c6c632cdfc800a970c426",
+      "dependency_order": 1,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Expose a transparent paper-facing Spec for the complete mapped source target.",
+        "Provide an exact-type theorem or lemma endpoint with no sorry."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:179-222",
+          "quoted_text": "There are developers $i$, programming languages $k\\in\\{1,\\ldots,K\\}$, and\nmonths $t$. Developer $i$ has a familiar-language set $\\mathcal{K}_i$ and\nan unfamiliar set $\\mathcal{U}_i$ with $U_i\\equiv|\\mathcal{U}_i|$; a\nspecialist is a developer with small $|\\mathcal{K}_i|$ and therefore many\nunfamiliar candidates. Empirically, ``unfamiliar'' means not observed in\nthe developer's prior public GitHub contributions; it need not imply\nthat the developer has no private experience with the language. For each developer--language pair, $s_{ik,t}\\in[0,1]$\nis language-specific execution skill, and the developer holds Normal\nbeliefs $\\theta_{ik}\\sim\\N(\\mu_{ik,t},1/\\pi_{ik,t})$ about her latent\nproductivity match, with low skill and low precision in unfamiliar\nlanguages. General ability $a_i\\ge0$ --- the capacity to specify,\ndecompose, and verify a task --- is language-invariant. Each language-month\ncarries an opportunity value $\\omega_{ik,t}$ and an activation cost\n$b_{ik,t}$. The developer has CARA utility with coefficient $\\rho$, so a\npayoff with mean $m$ and variance $\\sigma^2$ has certainty equivalent\n$m-\\rho\\sigma^2/2$ (Appendix \\ref{app:proofs}).\n\nSuppressing $(i,k,t)$ subscripts, the three modes deliver net\ncertainty-equivalent surpluses\n\\begin{align}\nV^S &= \\omega+s\\mu-\\frac{\\rho s^2}{2\\pi}-b,\n\\label{eq:solo-surplus}\\\\\nV^C &= V^S+\\gamma s-r_C,\n\\label{eq:copilot-surplus}\\\\\nV^D &= \\omega+(1-\\lambda)s\\mu+\\lambda a z(A)\n-\\kappa(a,s)-r_D-b\n-\\frac{\\rho}{2}\n\\left[\n\\frac{(1-\\lambda)^2s^2}{\\pi}\n+\\sigma_D^2(a,s,A)\n\\right].\n\\label{eq:delegate-surplus}\n\\end{align}\nSolo production exposes the developer to uncertainty about her own match.\nGeneration-1 augmentation yields a deterministic gain $\\gamma s$\nproportional to existing skill, net of interaction cost $r_C$: the\ndeveloper benefits most when she can read, adapt, and verify the\nsuggestion herself. Generation-2 delegation hands a share\n$\\lambda\\in(0,1]$ of execution to an agent with competence $z(A)$,\nincreasing in capability $A$ and scaled by the developer's general\nability; it carries verification cost $\\kappa(a,s)$, compute cost $r_D$,\nand residual error variance $\\sigma_D^2(a,s,A)$, while shrinking the\nvariance attached to the human match from $s^2/\\pi$ to\n$(1-\\lambda)^2 s^2/\\pi$.",
+          "quoted_text_sha256": "2b0cdf7f4b8b9b6d5d4be5fd6f4ae255e73733be6f9fd3f219a3db51edd9c0fb",
+          "byte_start": 6110,
+          "byte_end": 8368
+        }
+      ]
+    },
+    {
+      "source_item": "Assumption: Augmentation requires a foothold",
+      "source_location": "audit/source_archive_surface.tex:224-229",
+      "source_statement_sha256": "0bd8605fd99cc04fb5512fdd79799ad788e939e1ce08f7b7714cb9f4766ea358",
+      "dependency_order": 2,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Record the exact source premise declaration in Assumptions.lean.",
+        "Do not use the declaration or its name as substitute evidence for a proposition proof."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:224-229",
+          "quoted_text": "\\begin{assumption}[Augmentation requires a foothold]\n\\label{ass:foothold}\nFor unfamiliar languages with skill $\\underline{s}$,\n$\\gamma\\underline{s}-r_C\\le0$. For familiar languages with skill $\\bar{s}$,\n$\\gamma\\bar{s}-r_C>0$.\n\\end{assumption}",
+          "quoted_text_sha256": "11edb733394406bb3adf913285567df7c1e5d4b95e8ce46f2cf3749738f27c39",
+          "byte_start": 8370,
+          "byte_end": 8612
+        }
+      ]
+    },
+    {
+      "source_item": "Assumption: Verification technology",
+      "source_location": "audit/source_archive_surface.tex:231-237",
+      "source_statement_sha256": "2d51f838e48c635fbecbc794bd4a66c14975e61832a90561403cbf595252f3b7",
+      "dependency_order": 3,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Record the exact source premise declaration in Assumptions.lean.",
+        "Do not use the declaration or its name as substitute evidence for a proposition proof."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:231-237",
+          "quoted_text": "\\begin{assumption}[Verification technology]\n\\label{ass:verification}\nVerification costs and residual error are weakly lower for stronger\ndevelopers, more familiar languages, and more capable agents:\n$\\kappa_a<0$, $\\kappa_s\\le0$, and $\\partial\\sigma_D^2/\\partial a\\le0$,\n$\\partial\\sigma_D^2/\\partial s\\le0$, $\\partial\\sigma_D^2/\\partial A\\le0$.\n\\end{assumption}",
+          "quoted_text_sha256": "ea635ba84ea374b303e215be929c66ff60579069e033c0756c1d3f2b9ffcafa1",
+          "byte_start": 8614,
+          "byte_end": 8974
+        }
+      ]
+    },
+    {
+      "source_item": "Generation menus, activity, and language-count definitions",
+      "source_location": "audit/source_archive_surface.tex:245-249",
+      "source_statement_sha256": "409c7a8009336b9297e4b608f8a6cafc2451f51e3b8c855b942e95b645954091",
+      "dependency_order": 4,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Expose a transparent paper-facing Spec for the complete mapped source target.",
+        "Provide an exact-type theorem or lemma endpoint with no sorry."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:245-249",
+          "quoted_text": "The pre-agent menu is $\\mathcal{M}_1=\\{S,C\\}$; agentic adoption expands it\nto $\\mathcal{M}_2=\\{S,C,D\\}$. Under generation $g$ the developer takes the\nbest available mode, $V^g_{ik,t}=\\max_{m\\in\\mathcal{M}_g}V^m_{ik,t}$, and\nlanguage $k$ is \\emph{active} when $Z^g_{ik,t}=\\1{V^g_{ik,t}\\ge0}$, so the\nmonthly language count is $N^g_{it}=\\sum_k Z^g_{ik,t}$.",
+          "quoted_text_sha256": "bae7769e06f0de289099ea72d9a9d713434b51e69e4c589e90c93d745d408713",
+          "byte_start": 9206,
+          "byte_end": 9560
+        }
+      ]
+    },
+    {
+      "source_item": "Activation-threshold and delegation-advantage definitions",
+      "source_location": "audit/source_archive_surface.tex:251-311",
+      "source_statement_sha256": "40ad59530a4d22586d42da0fa085eca434d4e79fba97a7082be25a3790fb41a5",
+      "dependency_order": 5,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Expose a transparent paper-facing Spec for the complete mapped source target.",
+        "Provide an exact-type theorem or lemma endpoint with no sorry."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:251-311",
+          "quoted_text": "Because each surplus is affine in the opportunity shock $\\omega$, each\nmode has an activation threshold. Setting $V^S\\ge0$ in Equation\n\\eqref{eq:solo-surplus}, solo production is viable when\n\\begin{equation}\n\\omega\\ge\nT^S\\equiv b-s\\mu+\\frac{\\rho s^2}{2\\pi},\n\\label{eq:solo-threshold}\n\\end{equation}\nand since $V^C=V^S+\\gamma s-r_C$, augmentation is viable when\n$\\omega\\ge T^C=T^S-(\\gamma s-r_C)$. The developer takes whichever\npre-agent mode clears first, so the effective Generation-1 threshold is\n\\begin{equation}\nT^1=\\min\\{T^S,T^C\\}\n=T^S-\\max\\{0,\\gamma s-r_C\\},\n\\label{eq:gen1-threshold}\n\\end{equation}\nand for an unfamiliar language Assumption \\ref{ass:foothold} implies\n$\\gamma s-r_C\\le0$, hence $T^1=T^S$: augmentation does not move the\nentry margin. Setting $V^D\\ge0$ in Equation \\eqref{eq:delegate-surplus},\ndelegation is viable when\n\\begin{align}\n\\omega\\ge T^D\n\\equiv{}&\nb-(1-\\lambda)s\\mu-\\lambda a z(A)\n+\\kappa(a,s)+r_D\n\\nonumber\\\\\n&\\quad\n+\\frac{\\rho}{2}\n\\left[\n\\frac{(1-\\lambda)^2s^2}{\\pi}\n+\\sigma_D^2(a,s,A)\n\\right],\n\\label{eq:delegate-threshold}\n\\end{align}\nso the post-agent threshold is $T^2=\\min\\{T^1,T^D\\}\\le T^1$.\n\nFor an unfamiliar language, the economics reduce to the \\emph{agentic\nthreshold reduction} $B\\equiv T^1-T^D=T^S-T^D$. Differencing Equations\n\\eqref{eq:solo-threshold} and \\eqref{eq:delegate-threshold} (algebra in\nAppendix \\ref{app:proofs}) gives\n\\begin{equation}\nB\n=\n\\lambda\\bigl[a z(A)-s\\mu\\bigr]\n-\\kappa(a,s)-r_D\n+\\frac{\\rho}{2}\n\\left[\n\\frac{(2\\lambda-\\lambda^2)s^2}{\\pi}\n-\\sigma_D^2(a,s,A)\n\\right].\n\\label{eq:agentic-advantage}\n\\end{equation}\nThe first term is expected execution substitution: agentic output\nreplaces a share $\\lambda$ of the human's uncertain language-specific\noutput with agent execution $a z(A)$. The second is the verification and\ncompute cost of delegating. The third is risk substitution: delegation\nshrinks the variance attached to the human match but introduces residual\nagent-error risk. If $B>0$, delegation lowers the entry threshold for\nthe unfamiliar language, and by Assumption \\ref{ass:verification} the\nreduction is larger for higher-ability developers and more capable\nagents.",
+          "quoted_text_sha256": "be17dddcf2f8ec22264f76d687cec6570c8bec9dddadf9094cee61888bc040c5",
+          "byte_start": 9562,
+          "byte_end": 11708
+        }
+      ]
+    },
+    {
+      "source_item": "Proposition: Frontier expansion",
+      "source_location": "audit/source_archive_surface.tex:315-319",
+      "source_statement_sha256": "f366f65e8a48e7d84b19772e52e3c51f0674a58b659c5cdcbd50768df688cadb",
+      "dependency_order": 6,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Expose a transparent paper-facing Spec for the complete mapped source target.",
+        "Provide an exact-type theorem or lemma endpoint with no sorry."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:315-319",
+          "quoted_text": "\\begin{proposition}[Frontier expansion]\n\\label{prop:frontier}\nFor every developer, language, date, and opportunity realization,\n$Z^2_{ik,t}\\ge Z^1_{ik,t}$, hence $N^2_{it}\\ge N^1_{it}$ path by path.\n\\end{proposition}",
+          "quoted_text_sha256": "b1880c777d99435f053095af30aa9f158239958015d66ccc62e768329ea1e61a",
+          "byte_start": 11765,
+          "byte_end": 11981
+        }
+      ]
+    },
+    {
+      "source_item": "Proposition: Activation band for unfamiliar languages",
+      "source_location": "audit/source_archive_surface.tex:325-351",
+      "source_statement_sha256": "97220b294598132f916f5c399e620d061149590b5b7985127ba28d7595336f43",
+      "dependency_order": 7,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Expose a transparent paper-facing Spec for the complete mapped source target.",
+        "Provide an exact-type theorem or lemma endpoint with no sorry."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:325-351",
+          "quoted_text": "\\begin{proposition}[Activation band for unfamiliar languages]\n\\label{prop:band}\nConsider an unfamiliar language satisfying Assumption \\ref{ass:foothold}.\nIf $B_{ik,t}>0$, then\n\\begin{equation}\nZ^2_{ik,t}-Z^1_{ik,t}\n=\n\\1{T^D_{ik,t}\\le\\omega_{ik,t}<T^S_{ik,t}}.\n\\label{eq:band-indicator}\n\\end{equation}\nIf the conditional opportunity CDF $F_{ik,t}$ is continuous, the\nprobability that delegation activates the language is\n$F_{ik,t}(T^S_{ik,t})-F_{ik,t}(T^D_{ik,t})$, and the expected\nlanguage-count expansion is\n\\begin{equation}\n\\E\\!\\left[N^2_{it}-N^1_{it}\\right]\n=\n\\sum_{k}\n\\left[\nF_{ik,t}\\!\\left(T^1_{ik,t}\\right)\n-\nF_{ik,t}\\!\\left(T^2_{ik,t}\\right)\n\\right]\n\\ge 0.\n\\label{eq:expected-count}\n\\end{equation}\n\\end{proposition}",
+          "quoted_text_sha256": "54e9535206e0095b63f6f83e3ef00b4e0545e33cc181535c9bb61a1b13a5988c",
+          "byte_start": 12181,
+          "byte_end": 12904
+        }
+      ]
+    },
+    {
+      "source_item": "Proposition: Dynamic cumulative-language effect",
+      "source_location": "audit/source_archive_surface.tex:442-458",
+      "source_statement_sha256": "2709067ea6f27cd17744fd6cc64966a27e90026a315031c968ab33a3ee9b57ad",
+      "dependency_order": 8,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Expose the exact archival proposition and its strictness boundary in the source map.",
+        "Prove the nonnegative gap and the corrected interior, nonempty strictness result.",
+        "Prove a Lean counterexample to the printed endpoint case and do not claim full source equivalence without explicit correction approval."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:442-458",
+          "quoted_text": "\\begin{proposition}[Dynamic cumulative-language effect]\n\\label{prop:dynamic}\nFor an initially unfamiliar language, let $p^g_{ik}$ be the per-period\nfirst-use hazard under generation $g$. If $p^2_{ik}\\ge p^1_{ik}$, the\nexpected cumulative-language effect at event-time horizon $s$ is\n\\begin{equation}\n\\Delta C_i(s)\n=\n\\sum_{k\\in\\mathcal{U}_i}\n\\left[\n(1-p^1_{ik})^{s+1}-(1-p^2_{ik})^{s+1}\n\\right]\\ge0,\n\\label{eq:cumulative-gap}\n\\end{equation}\nwhich in the closed-frontier benchmark $p^1_{ik}=0<p^2_{ik}$ is strictly\nincreasing and concave over the observed horizon.\n\\end{proposition}",
+          "quoted_text_sha256": "643d5d3e6492a354a7ac3c708386d83298a5290bd89bb89acb291cc1702e1d9f",
+          "byte_start": 17159,
+          "byte_end": 17739
+        }
+      ]
+    },
+    {
+      "source_item": "Assumption: Comparable unfamiliar-language candidates",
+      "source_location": "audit/source_archive_surface.tex:613-619",
+      "source_statement_sha256": "aa32aa6e636dcfb641b8337bb1e6adf4c649a988c627fdd1b044f3a43e12d0c2",
+      "dependency_order": 9,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Record the exact source premise declaration in Assumptions.lean.",
+        "Do not use the declaration or its name as substitute evidence for a proposition proof."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:613-619",
+          "quoted_text": "\\begin{assumption}[Comparable unfamiliar-language candidates]\n\\label{ass:exchangeable}\nConditional on developer characteristics such as general ability, all\nunfamiliar languages have the same per-language activation increment\n$p_i(a_i,A)\\ge0$, and $p_i$ is increasing in $a_i$ whenever Assumption\n\\ref{ass:verification} makes delegation thresholds fall with ability.\n\\end{assumption}",
+          "quoted_text_sha256": "8b256a9301159edea520f170ed90ff744263a7985cf5e3d3ba49f174015d0f92",
+          "byte_start": 22781,
+          "byte_end": 23164
+        }
+      ]
+    },
+    {
+      "source_item": "Proposition: Specialist and ability heterogeneity",
+      "source_location": "audit/source_archive_surface.tex:621-634",
+      "source_statement_sha256": "c2b9b5b5224e79d9b8281eb2bb2cd99aa3252766341489d0e9af8f5308500d60",
+      "dependency_order": 10,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Expose a transparent paper-facing Spec for the complete mapped source target.",
+        "Provide an exact-type theorem or lemma endpoint with no sorry."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:621-634",
+          "quoted_text": "\\begin{proposition}[Specialist and ability heterogeneity]\n\\label{prop:specialist}\nUnder Assumption \\ref{ass:exchangeable}, expected expansion into initially\nunfamiliar languages is\n\\begin{equation}\n\\E[E_i\\mid a_i,U_i]=U_i p_i(a_i,A),\n\\qquad\nE_i\\equiv\\sum_{k\\in\\mathcal{U}_i}(Z^2_{ik}-Z^1_{ik}).\n\\label{eq:specialist-expansion}\n\\end{equation}\nIt is increasing in the stock of unfamiliar-language candidates $U_i$ and\nin general ability $a_i$. The largest extensive-margin gains accrue to\nhigh-ability specialists.\n\\end{proposition}",
+          "quoted_text_sha256": "f17c989de6190835917b666b5740a48d62824ef3ece21f1793396758e926a3c7",
+          "byte_start": 23166,
+          "byte_end": 23696
+        }
+      ]
+    },
+    {
+      "source_item": "Learning-after-agentic-interaction update",
+      "source_location": "audit/source_archive_surface.tex:694-730",
+      "source_statement_sha256": "fb5c325fb3a60416b319a7ed1cbdda6115bfeeec2f764cd1f9bebf67ddb0b5a5",
+      "dependency_order": 11,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Expose a transparent paper-facing Spec for the complete mapped source target.",
+        "Provide an exact-type theorem or lemma endpoint with no sorry."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:694-730",
+          "quoted_text": "\\subsection{Learning after agentic interaction}\n\nThe delegation channel explains why an unfamiliar language can be used\nimmediately; interaction with the agent and the language can also generate\nlearning that makes the language persist in the portfolio. Suppose the\ndeveloper observes signals\n\\begin{equation}\nx_{\\ell}=\\theta_{ik}+\\varepsilon_{\\ell},\n\\qquad\n\\varepsilon_{\\ell}\\sim\\N(0,\\sigma_{\\ell}^2),\n\\qquad\n\\ell=1,\\ldots,L,\n\\label{eq:signals}\n\\end{equation}\nconditionally independent given $\\theta_{ik}$. Let\n$q=\\sum_{\\ell=1}^L1/\\sigma_{\\ell}^2$ be the total signal precision and\n$\\bar{x}_q=(\\sum_{\\ell}x_\\ell/\\sigma_\\ell^2)/q$ the precision-weighted\nsignal mean. The posterior kernel is proportional to\n\\[\n\\exp\\left\\{\n-\\frac{1}{2}\\pi(\\theta-\\mu)^2\n-\\frac{1}{2}\\sum_{\\ell=1}^L\\frac{(x_\\ell-\\theta)^2}{\\sigma_\\ell^2}\n\\right\\},\n\\]\nand collecting terms in $\\theta$ gives the Bayesian update\n\\begin{equation}\n\\pi'_{ik}=\\pi_{ik}+q,\n\\qquad\n\\mu'_{ik}=\n\\frac{\\pi_{ik}\\mu_{ik}+q\\bar{x}_q}{\\pi_{ik}+q}.\n\\label{eq:bayes-update}\n\\end{equation}\nLearning raises precision and updates the productivity belief, so an\ninitially delegated language can remain active in later months. We use\nthis channel to interpret persistence and cumulative expansion, but not\nas the primary proof of immediate diversification: information can\nreveal bad matches as well as good ones.",
+          "quoted_text_sha256": "b6fea7eb4b2e6379a1d83103f29477ca1f74023fceb476765cf8a938bcfc0c06",
+          "byte_start": 25803,
+          "byte_end": 27157
+        }
+      ]
+    },
+    {
+      "source_item": "Proposition: Repository expansion",
+      "source_location": "audit/source_archive_surface.tex:734-742",
+      "source_statement_sha256": "09057b3ebe901b6d5ba2fd9ef51a93133c4495a2001fc79de940b21ff13dd2af",
+      "dependency_order": 12,
+      "owner": "Codex QX26 formalization",
+      "acceptance_conditions": [
+        "Prove weak expected repository expansion from weakly lower entry costs.",
+        "Expose the positive-opportunity-mass premise required for strict expansion.",
+        "Do not silently identify the strengthened strictness premise with the shorter printed proposition statement."
+      ],
+      "source_atoms": [
+        {
+          "source_location": "audit/source_archive_surface.tex:734-742",
+          "quoted_text": "\\begin{proposition}[Repository expansion]\n\\label{prop:repos}\nSuppose each repository requires at least one programming language and carries\nan entry cost that is weakly decreasing when the developer can activate that\nlanguage. If agentic delegation weakly expands the active-language set, then\nthe expected number of repositories the developer can contribute to weakly\nincreases. It increases strictly when some repositories require languages in\nthe delegation activation band.\n\\end{proposition}",
+          "quoted_text_sha256": "03f5df9775c52eb2a3e669673c7ce8664cb8e84972b4776254a2a638bb939a94",
+          "byte_start": 27194,
+          "byte_end": 27689
+        }
+      ]
+    }
+  ],
+  "seal_requirements": {
+    "state": "sealed",
+    "inventory_complete": true,
+    "every_item_has_owner": true,
+    "dependency_order_is_total": true,
+    "every_source_atom_has_locator_exact_byte_slice_quote_and_sha256": true,
+    "pdf_atoms_use_pinned_normalized_source_text_receipt": true
+  }
+}

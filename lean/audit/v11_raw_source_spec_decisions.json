@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "paper": "QX26AgenticDelegation",
+  "items": {
+    "QX26AgenticDelegation.production_mode_surplusesSpec": {
+      "judgment": "mismatch",
+      "reason": "The Lean target reproduces Equations (1)-(3) and the displayed parameter bounds, but the same byte-pinned source block also assigns Normal productivity beliefs, gives the CARA certainty-equivalent interpretation, and states that agent competence is increasing in capability. The Spec contains only algebraic defining equalities and does not formalize those probability/utility semantics or the monotonicity of z, so the complete raw source block is not semantically equivalent to the Spec."
+    },
+    "QX26AgenticDelegation.generation_menus_and_activitySpec": {
+      "judgment": "matches",
+      "reason": "The transparent Spec gives the Generation-1 maximum over solo and conversational production, the Generation-2 maximum after adding delegation, the nonnegative-surplus activity indicator, and the finite sum defining the monthly active-language count. Its universal real-valued mode inputs and arbitrary finite language set realize the source definitions without an additional premise."
+    },
+    "QX26AgenticDelegation.activation_thresholdsSpec": {
+      "judgment": "mismatch",
+      "reason": "The Spec reproduces the solo, conversational, effective Generation-1, delegation, Generation-2, foothold, and delegation-advantage algebra in Equations (4)-(8). However, the primary source bundle also concludes that the threshold reduction is larger for higher-ability developers and more capable agents by the verification assumption. The Spec contains neither that comparative-statics conclusion nor the needed verification and competence-monotonicity hypotheses, so the complete source block is only partially represented."
+    },
+    "QX26AgenticDelegation.learning_after_agentic_interactionSpec": {
+      "judgment": "mismatch",
+      "reason": "The Spec correctly states the total-precision, precision-weighted-mean, posterior-precision, posterior-mean, and strict precision-growth formulas for a nonempty finite signal family with positive variances. It does not represent the source's Normal signal law, conditional independence given theta, posterior kernel, or the conjugate derivation. Therefore it covers the algebraic update but not the complete source learning claim."
+    },
+    "QX26AgenticDelegation.frontier_expansionSpec": {
+      "judgment": "matches",
+      "reason": "After expanding the source menu, activity, and count definitions supplied as semantic context, the Spec says exactly that adding the delegation option weakly raises every pathwise activity indicator and therefore weakly raises the finite sum of active languages. No extra economic or proof premise is introduced."
+    },
+    "QX26AgenticDelegation.activation_band_unfamiliar_languagesSpec": {
+      "judgment": "matches",
+      "reason": "The first branch states the exact half-open activation-band indicator under the source foothold and strict threshold reduction and identifies its probability with the CDF difference for an atomless probability law, which is the measure-theoretic form of the source's continuous CDF condition. The second branch sums the threshold-band masses and proves the source's nonnegative expected count expansion under weak threshold reductions."
+    },
+    "QX26AgenticDelegation.dynamic_cumulative_language_effectSpec": {
+      "judgment": "mismatch",
+      "reason": "The nonnegative cumulative-gap clause matches the displayed formula on valid hazards. The source additionally asserts strict increase and concavity from p1 = 0 < p2 alone. The Lean target correctly adds a nonempty unfamiliar-language set and the interior condition p2 < 1; those are genuine extra conditions, since the printed claim fails for an empty set and for p2 = 1. No approved corrected-source target exists, so this must remain a mismatch to the archival statement."
+    },
+    "QX26AgenticDelegation.specialist_and_ability_heterogeneitySpec": {
+      "judgment": "matches",
+      "reason": "Under the byte-pinned comparable-candidate assumption, the Spec identifies total expected activation with the finite candidate count times the common nonnegative increment and proves weak monotonicity both in ability and under enlargement of the unfamiliar-language candidate set. This is the source proposition's product formula and its two comparative statics."
+    },
+    "QX26AgenticDelegation.repository_expansionSpec": {
+      "judgment": "mismatch",
+      "reason": "The weak expected-access inequality matches the source and its proof. For strictness, the Lean target requires positive opportunity mass in a repository cost interval, while the displayed proposition says merely that some repository requires a language in the delegation activation band. The source proof itself invokes positive mass, so Lean exposes a missing condition in the printed proposition; without paper-owner approval of a corrected target, the archival statement and Spec do not match."
+    }
+  }
+}

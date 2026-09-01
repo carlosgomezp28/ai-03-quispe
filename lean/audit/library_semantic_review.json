@@ -1,0 +1,69 @@
+{
+  "comment": "Each verdict compares the byte-pinned paper-source bundle with Lean's current semantic target and exact bounded declaration code. These prerequisites are not additional paper-claim rows.",
+  "direct_spec_dependency_surface": {
+    "items": {
+      "QX26AgenticDelegation.activation_band_unfamiliar_languagesSpec": {
+        "direct_library_declarations": [],
+        "review_owner_declarations": [],
+        "semantic_target_sha256": "00ec8036b33b1d8818b1054bbc189e15c6b4379c179ea48770f25b0c6ee76d0f",
+        "spec_source_sha256": "7055115471658ecf81fef07fdc7be86473fedd412807c31a141f7cd2fad89930"
+      },
+      "QX26AgenticDelegation.activation_thresholdsSpec": {
+        "direct_library_declarations": [],
+        "review_owner_declarations": [],
+        "semantic_target_sha256": "30ab2a27d5e0475632272e4868ac8ded9cf426854e993c4786d496438787fa73",
+        "spec_source_sha256": "d011742e688710af30e02d3f25fe2b4bc60c9b2abe4b0a64e9a8fbf3488eab42"
+      },
+      "QX26AgenticDelegation.dynamic_cumulative_language_effectSpec": {
+        "direct_library_declarations": [],
+        "review_owner_declarations": [],
+        "semantic_target_sha256": "125498be0129bffbc24760f7c5b8a167530877163dbe9a820d957f3c9c3aa44c",
+        "spec_source_sha256": "63f6b7d4361c7fa195f4e49abc641563d0b774204900938fbf8452fd66986604"
+      },
+      "QX26AgenticDelegation.frontier_expansionSpec": {
+        "direct_library_declarations": [],
+        "review_owner_declarations": [],
+        "semantic_target_sha256": "625cc394315b75f53b3207cb08b66db36d47ce2e9f2ca4404467a2173d9a1aac",
+        "spec_source_sha256": "035307a3e8bfa10d48130a575e02f7c576fb6b242570bd1d2df1f0e5ac993ab5"
+      },
+      "QX26AgenticDelegation.generation_menus_and_activitySpec": {
+        "direct_library_declarations": [],
+        "review_owner_declarations": [],
+        "semantic_target_sha256": "716ed1d6590906d61341789896ba649159a59f656f96ca6dc27e7830aec5ccdb",
+        "spec_source_sha256": "19db8c9bd6dad6a270469d90487f9a86e351a8766411497916baede718c79813"
+      },
+      "QX26AgenticDelegation.learning_after_agentic_interactionSpec": {
+        "direct_library_declarations": [],
+        "review_owner_declarations": [],
+        "semantic_target_sha256": "534a42c91ba8ce14a83d8d34358db81da541c6e9610beeb8a77339d8a0ccb61b",
+        "spec_source_sha256": "be6f0488063191742a381484772df5b8bf8068d379557391fd19595d6ebbf7fc"
+      },
+      "QX26AgenticDelegation.production_mode_surplusesSpec": {
+        "direct_library_declarations": [],
+        "review_owner_declarations": [],
+        "semantic_target_sha256": "3fde7206d1b5217085870549fc67c840f9b9e2989880cf1de7e234e9c73675d7",
+        "spec_source_sha256": "a19f0e543953d52d8a8e75351af21924a08ae54d47b2f4954968c25db09b8bf7"
+      },
+      "QX26AgenticDelegation.repository_expansionSpec": {
+        "direct_library_declarations": [],
+        "review_owner_declarations": [],
+        "semantic_target_sha256": "24a0f3fe9a2662e2097c6b25eef321e684ae67f212bb28ac0bf75baf7b02028e",
+        "spec_source_sha256": "aea78685de333386c82e4d73b35d11e515913ea9b5e6ff0ba658ba1cfc2f9aa4"
+      },
+      "QX26AgenticDelegation.specialist_and_ability_heterogeneitySpec": {
+        "direct_library_declarations": [],
+        "review_owner_declarations": [],
+        "semantic_target_sha256": "089798a0b8493ba17bdd1770c39c61a29c380c153b7a1eb38d3a0b4c7e846d78",
+        "spec_source_sha256": "39c935315af155f8007d9c4009f8f343718348741d4a4ad4d77909db2e2498e1"
+      }
+    },
+    "paper_interface_sha256": "77584913596dc744303a4b157013e5b5fe902c6e2fb07ea390909532c18b872d",
+    "protocol": "lean-expanded-paper-spec-library-surface-v1",
+    "schema": 1
+  },
+  "items": {},
+  "paper": "QX26AgenticDelegation",
+  "prompt_version": "library-statement-match-v2-verbatim-source-anchor-lean-display-exact-code",
+  "schema": 1,
+  "target_protocol": "lean-library-display-plus-exact-code-v1"
+}

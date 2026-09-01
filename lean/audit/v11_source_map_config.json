@@ -1,0 +1,29 @@
+{
+  "paper": "QX26AgenticDelegation",
+  "namespace": "QX26AgenticDelegation",
+  "paper_interface_module": "",
+  "source_version": "arXiv:2605.25438v2 (2026-07-07)",
+  "include_specs": [
+    "production_mode_surpluses",
+    "generation_menus_and_activity",
+    "activation_thresholds",
+    "learning_after_agentic_interaction",
+    "frontier_expansion",
+    "activation_band_unfamiliar_languages",
+    "dynamic_cumulative_language_effect",
+    "specialist_and_ability_heterogeneity",
+    "repository_expansion"
+  ],
+  "source_item_for_spec": {
+    "production_mode_surpluses": "production_mode_surpluses",
+    "generation_menus_and_activity": "generation_menus_and_activity",
+    "activation_thresholds": "activation_thresholds",
+    "learning_after_agentic_interaction": "learning_after_agentic_interaction",
+    "frontier_expansion": "frontier_expansion",
+    "activation_band_unfamiliar_languages": "activation_band_unfamiliar_languages",
+    "dynamic_cumulative_language_effect": "dynamic_cumulative_language_effect",
+    "specialist_and_ability_heterogeneity": "specialist_and_ability_heterogeneity",
+    "repository_expansion": "repository_expansion"
+  },
+  "initialize_selected_source_claim_atoms": true
+}

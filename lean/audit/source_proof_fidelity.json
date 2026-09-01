@@ -1,0 +1,143 @@
+{
+  "schema": 2,
+  "paper": "QX26AgenticDelegation",
+  "source_artifact_path": "audit/source_archive_surface.tex",
+  "source_artifact_sha256": "99ee555dad291679321b8d3f348787e54861903c99e01595ab8cb42fd3d42031",
+  "source_archive_path": "source/arxiv-2605.25438v2.tar.gz",
+  "source_archive_sha256": "1b3e7968697bcb306f7c96fbdb60e93d8c49eb805afb15ce00271084da24a296",
+  "review_status": "defects_recorded",
+  "reviewed_proof_scopes": [
+    {
+      "source_locator": "audit/source_archive_surface.tex:179-351; audit/source_archive_surface.tex:494-608",
+      "semantic_scope": "Production-mode surpluses, activation thresholds, frontier expansion, and activation-band probability/count formulas together with the appendix algebra and proofs.",
+      "outcome": "no_defect"
+    },
+    {
+      "source_locator": "audit/source_archive_surface.tex:442-458; audit/source_archive_surface.tex:655-692",
+      "semantic_scope": "Dynamic cumulative-language proposition, nonnegative gap argument, first differences, and printed strict growth/concavity clause.",
+      "outcome": "defect_recorded"
+    },
+    {
+      "source_locator": "audit/source_archive_surface.tex:613-634; audit/source_archive_surface.tex:636-653",
+      "semantic_scope": "Comparable-candidate assumption and specialist/ability heterogeneity proposition and proof.",
+      "outcome": "no_defect"
+    },
+    {
+      "source_locator": "audit/source_archive_surface.tex:694-730",
+      "semantic_scope": "Finite-signal total precision, precision-weighted mean, posterior update formulas, and precision increase.",
+      "outcome": "no_defect"
+    },
+    {
+      "source_locator": "audit/source_archive_surface.tex:734-755",
+      "semantic_scope": "Repository-expansion proposition and proof, including the opportunity-mass premise for strictness.",
+      "outcome": "defect_recorded"
+    }
+  ],
+  "model_conventions": [
+    {
+      "id": "QX26-FINITE-LANGUAGE-AND-REPOSITORY-SETS-01",
+      "source_locator": "audit/source_archive_surface.tex:179-182; 245-249; 734-755",
+      "classification": "source_text_model_convention",
+      "formal_meaning": "Programming-language and repository collections are represented by Finset carriers, so the source's language and repository counts are finite sums.",
+      "why_needed": "The source fixes K programming languages and sums activity indicators and repository indicators. Finset makes the pathwise and expected-count sums explicit.",
+      "checked_scope": "generation_menus_and_activitySpec, frontier_expansionSpec, activation_band_unfamiliar_languagesSpec, dynamic_cumulative_language_effectSpec, specialist_and_ability_heterogeneitySpec, and repository_expansionSpec"
+    },
+    {
+      "id": "QX26-CONTINUOUS-CDF-AS-ATOMLESS-LAW-01",
+      "source_locator": "audit/source_archive_surface.tex:335-351; 605-608",
+      "classification": "mathematically_equivalent_source_convention",
+      "formal_meaning": "The source's continuous conditional CDF is represented by a probability measure on the reals with zero mass at every singleton; the activation band is the half-open interval [TD,TS).",
+      "why_needed": "For a real probability law, continuity of its CDF is equivalent to absence of atoms. This form lets Mathlib's interval-measure identity derive F(TS)-F(TD) exactly.",
+      "checked_scope": "activation_band_unfamiliar_languagesSpec and the bandProbability_eq_cdf_sub implementation theorem"
+    },
+    {
+      "id": "QX26-LEARNING-ALGEBRA-SCOPE-01",
+      "source_locator": "audit/source_archive_surface.tex:694-730",
+      "classification": "formalization_scope_boundary",
+      "formal_meaning": "Lean represents a nonempty finite family of positive signal variances and verifies q, the precision-weighted signal mean, the displayed posterior parameter formulas, and strict posterior-precision growth.",
+      "why_needed": "The current endpoint checks the appendix's conjugate-update formulas algebraically; it does not independently construct Normal random variables or prove the full posterior-kernel conjugacy theorem.",
+      "checked_scope": "learning_after_agentic_interactionSpec and learning_after_agentic_interaction",
+      "unresolved_relation_to_literal_source": "The literal source's conditional independence and Normal posterior derivation remain mathematical context for the checked parameter update, not a separately realized probability-model theorem."
+    }
+  ],
+  "checked_proof_steps": [
+    {
+      "id": "QX26-THRESHOLD-ALGEBRA-01",
+      "source_locator": "audit/source_archive_surface.tex:251-311; audit/source_archive_surface.tex:513-573",
+      "source_step": "Solve each affine surplus inequality for opportunity, take the minimum available threshold, and difference solo and delegation thresholds to obtain B.",
+      "checked_conclusion": "Lean unfolds the three surplus and five threshold definitions, proves the minimum identity, the foothold consequence, and the exact delegation-advantage polynomial identity.",
+      "scope": "production_mode_surpluses, generation_menus_and_activity, and activation_thresholds"
+    },
+    {
+      "id": "QX26-FRONTIER-AND-BAND-01",
+      "source_locator": "audit/source_archive_surface.tex:315-351; audit/source_archive_surface.tex:575-608",
+      "source_step": "Use menu inclusion for pathwise frontier monotonicity and subtract the old/new threshold indicators to identify the activation band and its CDF mass.",
+      "checked_conclusion": "Lean proves pathwise activity/count monotonicity, the exact integer indicator difference, the atomless-law CDF difference, and nonnegative summed expected expansion.",
+      "scope": "frontier_expansion and activation_band_unfamiliar_languages"
+    },
+    {
+      "id": "QX26-DYNAMIC-GAP-01",
+      "source_locator": "audit/source_archive_surface.tex:442-458; audit/source_archive_surface.tex:655-692",
+      "source_step": "Compare one-minus-hazard powers to prove a nonnegative cumulative gap, then analyze first and second finite differences.",
+      "checked_conclusion": "Lean proves the nonnegative gap for weakly ordered hazards and strict growth/strictly decreasing gains for a nonempty frontier with every new hazard strictly between zero and one; it also proves the p2=1 boundary counterexample.",
+      "scope": "dynamic_cumulative_language_effect and dynamic_strictness_boundary_counterexample"
+    },
+    {
+      "id": "QX26-SPECIALIST-HETEROGENEITY-01",
+      "source_locator": "audit/source_archive_surface.tex:621-653",
+      "source_step": "Apply the common per-language increment and finite-sum linearity, then use monotonicity in ability and set inclusion.",
+      "checked_conclusion": "Lean proves the card-times-common-increment identity and weak monotonicity in both ability and the unfamiliar-language candidate set.",
+      "scope": "specialist_and_ability_heterogeneity"
+    },
+    {
+      "id": "QX26-LEARNING-UPDATE-01",
+      "source_locator": "audit/source_archive_surface.tex:694-730",
+      "source_step": "Sum inverse signal variances, form the precision-weighted mean, and combine prior and signal precision in the posterior parameters.",
+      "checked_conclusion": "Lean verifies the displayed finite-sum definitions and proves that a nonempty family of positive signal variances strictly raises posterior precision.",
+      "scope": "learning_after_agentic_interaction"
+    },
+    {
+      "id": "QX26-REPOSITORY-EXPANSION-01",
+      "source_locator": "audit/source_archive_surface.tex:734-755",
+      "source_step": "Lower repository entry costs, compare upper-tail opportunity events, and use positive mass in at least one cost band for strictness.",
+      "checked_conclusion": "Lean proves weak expected expansion for all weak cost reductions and strict expansion when one lowered-cost band has positive opportunity mass.",
+      "scope": "repository_expansion"
+    }
+  ],
+  "defects": [
+    {
+      "id": "QX26-DYNAMIC-STRICTNESS-01",
+      "source_locator": "audit/source_archive_surface.tex:442-458; audit/source_archive_surface.tex:655-692",
+      "source_claim": "In the closed-frontier benchmark p1=0<p2, the expected cumulative-language effect is strictly increasing and concave over the observed horizon.",
+      "defect_kind": "domain_or_endpoint",
+      "affected_source_locators": [
+        "audit/source_archive_surface.tex:456-457",
+        "audit/source_archive_surface.tex:689-691"
+      ],
+      "statement_impact": "source_statement",
+      "repair_obligation": "Require a nonempty unfamiliar-language set and interior post-agent hazards 0<p2<1 for every counted language before asserting strict growth and strict concavity.",
+      "acceptance_condition": "A paper owner explicitly approves the corrected source target and the exact Lean endpoint proves both strict finite-difference inequalities under those visible conditions.",
+      "resolution": "open_proof_obligation",
+      "resolution_evidence": "dynamic_cumulative_language_effect proves the corrected interior/nonempty endpoint and dynamic_strictness_boundary_counterexample proves failure at p2=1; explicit corrected-target approval has not been supplied.",
+      "status_impact": "partially_formalized",
+      "status_impact_rationale": "The printed strict claim is false at an allowed endpoint and for an empty frontier. The correction is proved but cannot be represented as an approved source correction without paper-owner authorization."
+    },
+    {
+      "id": "QX26-REPOSITORY-STRICTNESS-01",
+      "source_locator": "audit/source_archive_surface.tex:734-755",
+      "source_claim": "Expected repository access increases strictly when some repositories require languages in the delegation activation band.",
+      "defect_kind": "event_or_measure",
+      "affected_source_locators": [
+        "audit/source_archive_surface.tex:740-741",
+        "audit/source_archive_surface.tex:752-754"
+      ],
+      "statement_impact": "source_statement",
+      "repair_obligation": "Require positive opportunity probability in at least one repository's lowered entry-cost band, as the source proof itself does, before concluding a strict expectation increase.",
+      "acceptance_condition": "A paper owner explicitly approves the proof's positive-mass condition as the corrected displayed proposition premise and the Lean endpoint proves strict expansion from it.",
+      "resolution": "open_proof_obligation",
+      "resolution_evidence": "repository_expansion proves strict expected expansion from positive measure of Set.Ico(newCost, oldCost); explicit corrected-target approval has not been supplied.",
+      "status_impact": "partially_formalized",
+      "status_impact_rationale": "The proposition's printed strict premise omits the positive-mass condition stated in its proof. The strengthened endpoint is proved, but source-equivalence approval is still absent."
+    }
+  ]
+}
