@@ -183,7 +183,57 @@
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}{2. One opportunity, three production modes}
+\begin{frame}{2. From uncertainty to surplus: CARA--Normal certainty equivalent}
+  \vspace{-0.08cm}
+  \begin{columns}[T,onlytextwidth]
+    \begin{column}{0.55\textwidth}
+      \begin{block}{Latent productivity match}
+        \vspace{-0.08cm}
+        \[
+          \theta_{ik}\mid\mathcal F_{it}
+          \sim
+          N\!\left(\mu_{ik,t},\frac{1}{\pi_{ik,t}}\right)
+        \]
+        \vspace{-0.10cm}
+        \scriptsize
+        $\theta_{ik}$: latent developer--language productivity match;\par
+        $\mu_{ik,t}=E[\theta_{ik}\mid\mathcal F_{it}]$: posterior mean;\par
+        $\pi_{ik,t}$: belief precision, so variance is $1/\pi_{ik,t}$;\par
+        $s_{ik,t}$: language-specific execution skill, distinct from the uncertain match $\theta_{ik}$.
+      \end{block}
+    \end{column}
+    \begin{column}{0.41\textwidth}
+      \begin{block}{CARA--Normal payoff}
+        \[
+          u(Y)=-e^{-\rho Y},
+          \qquad
+          Y\sim N(m,v).
+        \]
+        \vspace{-0.08cm}
+        \[
+          \boxed{CE(Y)=m-\frac{\rho}{2}v}
+        \]
+        \scriptsize Variance becomes a risk penalty.
+      \end{block}
+    \end{column}
+  \end{columns}
+
+  \vspace{-0.04cm}
+  \begin{beamercolorbox}[wd=\textwidth,sep=0.15cm,rounded=true]{block body example}
+    \small\textbf{Bridge to the production menu.} Each production-mode value $V^m$ is a \textbf{net certainty-equivalent surplus}: expected payoff minus the risk penalty minus mode-specific costs.
+    \vspace{-0.06cm}
+    \[
+      V^S
+      =\underbrace{\omega+s\mu}_{\text{expected payoff}}
+      -\underbrace{\frac{\rho s^2}{2\pi}}_{\text{risk penalty}}
+      -\underbrace{b}_{\text{activation cost}}.
+    \]
+    \vspace{-0.10cm}
+  \end{beamercolorbox}
+\end{frame}
+
+% -------------------------------------------------------------------
+\begin{frame}{3. One opportunity, three production modes}
   \vspace{0.05cm}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.31\textwidth}
@@ -225,7 +275,7 @@
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}{3. Solo and conversational entry: augmentation needs a foothold}
+\begin{frame}{4. Solo and conversational entry: augmentation needs a foothold}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.54\textwidth}
       \begin{align*}
@@ -262,7 +312,7 @@
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}{4. Delegated surplus and the new threshold}
+\begin{frame}{5. Delegated surplus and the new threshold}
   \small
   \begin{align*}
     V^D
@@ -307,7 +357,7 @@
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}{5. Proposition 1: weak frontier expansion is menu inclusion}
+\begin{frame}{6. Proposition 1: weak frontier expansion is menu inclusion}
   \vspace{0.12cm}
   \begin{center}
     \begin{tikzpicture}[node distance=1.0cm,>=Latex]
@@ -340,7 +390,7 @@
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}{6. Proposition 2: the delegation advantage creates an activation band}
+\begin{frame}{7. Proposition 2: the delegation advantage creates an activation band}
   \vspace{-0.10cm}
   \[
     \boxed{
@@ -384,7 +434,7 @@
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}{7. What I verified by hand}
+\begin{frame}{8. What I verified by hand}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.61\textwidth}
       \source{Relabeled here into the paper's printed notation.}
@@ -427,7 +477,7 @@
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}[fragile]{8. Mandatory Lean link: Proposition 2, objects and conclusion}
+\begin{frame}[fragile]{9. Mandatory Lean link: Proposition 2, objects and conclusion}
   \vspace{-0.06cm}
   \textbf{Paper equation (8):}
   \[
@@ -470,7 +520,7 @@ theorem threshold_indicator_sub_eq_band
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}[fragile]{9. Lean finding \#1: Proposition 3 is not strictly true on its printed domain}
+\begin{frame}[fragile]{10. Lean finding \#1: Proposition 3 is not strictly true on its printed domain}
   \vspace{-0.06cm}
   \textbf{Printed dynamic claim:}
   \[
@@ -515,7 +565,7 @@ theorem dynamic_strictness_boundary_counterexample :
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}[fragile]{10. Lean finding \#2: strict repository expansion needs opportunity mass}
+\begin{frame}[fragile]{11. Lean finding \#2: strict repository expansion needs opportunity mass}
   \vspace{-0.08cm}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.43\textwidth}
@@ -563,7 +613,7 @@ theorem repository_expected_expansion_strict
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}{11. Empirical evidence: sharp associations at first detectable use}
+\begin{frame}{12. Empirical evidence: sharp associations at first detectable use}
   \vspace{-0.03cm}
   \begin{columns}[c,onlytextwidth]
     \begin{column}{0.30\textwidth}\centering
@@ -607,7 +657,7 @@ theorem repository_expected_expansion_strict
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}{12. Where I did not believe the AI}
+\begin{frame}{13. Where I did not believe the AI}
   \vspace{-0.03cm}
   \begin{columns}[T,onlytextwidth]
     \begin{column}{0.48\textwidth}
@@ -634,7 +684,7 @@ theorem repository_expected_expansion_strict
 \end{frame}
 
 % -------------------------------------------------------------------
-\begin{frame}{13. Final takeaway: frontier expansion, with conditions}
+\begin{frame}{14. Final takeaway: frontier expansion, with conditions}
   \begin{beamercolorbox}[wd=\textwidth,sep=0.16cm,rounded=true]{block body example}
     \centering
     {\normalsize\bfseries Agentic AI can expand a developer's feasible production frontier by lowering the entry threshold for unfamiliar-language opportunities.}\par

@@ -768,7 +768,9 @@ Languages inside this interval are outside the developer's pre-agent production 
 
 - `README.md` — model summary, propositions, and referee checks
 - `prompts.md` — raw LLM prompts and responses
-- `hand/` — handwritten derivation of the core model
+- `hand/` — handwritten derivations:
+  - `prop-2-delegation-activation-band.pdf` — main derivation of the delegation threshold and activation band
+  - `cara-normal-certainty-equivalent.pdf` — supplementary CARA–Normal expected-utility and certainty-equivalent derivation
 - `presentation.tex` — twenty-minute Beamer presentation source
 - `presentation.pdf` — compiled presentation
 - `lean/` — EconCSLib formalization, proofs, audits, and validation report
